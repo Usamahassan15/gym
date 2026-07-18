@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SectionHeader } from "./SectionHeader";
 
-const FAQ = [
+const ITEMS = [
   { q: "How do I sign up for a membership?", a: "You can sign up online through our pricing section, or drop by the gym and our team will set you up in under 5 minutes." },
   { q: "Are there any hidden fees?", a: "No. The price you see is the price you pay. Every plan includes access to all zones, group classes, and locker rooms." },
   { q: "Do you offer a free trial?", a: "Yes — first-time visitors get a free 1-day trial including a full facility tour and one group class." },
