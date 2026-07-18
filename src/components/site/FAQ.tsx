@@ -30,7 +30,7 @@ export function FAQ() {
           className="glass rounded-2xl p-2 sm:p-4"
         >
           <Accordion type="single" collapsible className="w-full">
-            {FAQ.map((f, i) => (
+            {ITEMS.map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-white/10">
                 <AccordionTrigger className="px-4 text-left text-base hover:no-underline">
                   {f.q}
@@ -49,7 +49,7 @@ export function FAQ() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              mainEntity: FAQ.map((f) => ({
+              mainEntity: ITEMS.map((f) => ({
                 "@type": "Question",
                 name: f.q,
                 acceptedAnswer: { "@type": "Answer", text: f.a },
